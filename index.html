@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yufei Chen - Academic Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .dark .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .dark .glass-effect {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">YC</span>
+                    </div>
+                    <span class="font-semibold text-lg">Yufei Chen</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+                    <a href="#research" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Research</a>
+                    <a href="#publications" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Publications</a>
+                    <a href="#contact" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+                </div>
+                
+                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-sun dark:hidden"></i>
+                    <i class="fas fa-moon hidden dark:inline"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 gradient-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-graduate text-4xl"></i>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Yufei Chen</h1>
+                    <p class="text-xl md:text-2xl font-light mb-6">Master's Candidate in Artificial Intelligence</p>
+                    <p class="text-lg opacity-90">Nanjing University</p>
+                </div>
+                
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:chenyf@smail.nju.edu.cn" class="flex items-center space-x-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://ai.nju.edu.cn/main.htm" target="_blank" class="flex items-center space-x-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition-colors">
+                        <i class="fas fa-university"></i>
+                        <span>University</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+                <div class="prose prose-lg dark:prose-invert max-w-none">
+                    <p class="text-lg leading-relaxed mb-6">
+                        I am currently a Master's candidate at the 
+                        <a href="https://ai.nju.edu.cn/main.htm" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">School of Artificial Intelligence</a>, 
+                        Nanjing University (NJU), and a member of the 
+                        <a href="http://nlp.nju.edu.cn/homepage/" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">NLP research group</a>, 
+                        led by 
+                        <a href="https://cs.nju.edu.cn/chenjiajun/index.htm" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">Prof. Jiajun Chen</a>. 
+                        My advisor is 
+                        <a href="https://ai.nju.edu.cn/daixinyu/index.htm" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">Prof. Xinyu Dai</a>.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        My academic journey is driven by a passion for advancing the frontiers of artificial intelligence, 
+                        particularly in developing more intelligent and reasoning-capable systems that can understand and 
+                        interact with the world in meaningful ways.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Research Interests</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-primary-600 dark:text-primary-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Large Language Models</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Exploring the capabilities and limitations of large-scale language models, 
+                        focusing on their reasoning abilities and practical applications.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-primary-600 dark:text-primary-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Reinforcement Learning</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Investigating reinforcement learning techniques to enhance model reasoning 
+                        and decision-making capabilities in complex environments.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-primary-600 dark:text-primary-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">In-Context Learning</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Studying how models can learn and adapt from contextual information 
+                        without explicit parameter updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Publications</h2>
+            <div class="space-y-6">
+                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">
+                                <a href="https://www.jos.org.cn/jos/article/abstract/7206" target="_blank" 
+                                   class="text-primary-600 dark:text-primary-400 hover:underline">
+                                    Text and Table Numerical Question-answering Model Based on Multi-granularity Cell Contrast
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400 mb-3">
+                                <strong>Authors:</strong> Jiang-Zhou Ju, Yun-Lin Mao, Zhen Wu, <strong>Yu-Fei Chen</strong>, Xin-Yu Dai, Jia-Jun Chen
+                            </p>
+                            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                                This paper presents a novel approach to numerical question-answering tasks involving both text and tables, 
+                                introducing a multi-granularity cell contrast method to improve the model's ability to distinguish 
+                                between relevant and irrelevant information in tabular data.
+                            </p>
+                        </div>
+                        <div class="ml-4 flex-shrink-0">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200">
+                                Journal Paper
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
+                        <span><i class="fas fa-calendar mr-1"></i>2024</span>
+                        <span><i class="fas fa-journal-whills mr-1"></i>Journal of Software</span>
+                        <a href="https://www.jos.org.cn/jos/article/abstract/7206" target="_blank" 
+                           class="flex items-center space-x-1 text-primary-600 dark:text-primary-400 hover:underline">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Paper</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact</h2>
+            <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-envelope text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <a href="mailto:chenyf@smail.nju.edu.cn" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                        chenyf@smail.nju.edu.cn
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Location</p>
+                                    <p class="text-gray-600 dark:text-gray-300">Nanjing University, China</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-university text-primary-600 dark:text-primary-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Affiliation</p>
+                                    <a href="https://ai.nju.edu.cn/main.htm" target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">
+                                        School of Artificial Intelligence
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6">Research Group</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
+                                <p class="font-medium mb-2">NLP Research Group</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                                    Part of the Natural Language Processing research group at Nanjing University
+                                </p>
+                                <a href="http://nlp.nju.edu.cn/homepage/" target="_blank" 
+                                   class="text-primary-600 dark:text-primary-400 hover:underline text-sm">
+                                    Visit Group Website <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="p-4 bg-gray-50 dark:bg-gray-600 rounded-lg">
+                                <p class="font-medium mb-2">Supervisor</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                                    Prof. Xinyu Dai
+                                </p>
+                                <a href="https://ai.nju.edu.cn/daixinyu/index.htm" target="_blank" 
+                                   class="text-primary-600 dark:text-primary-400 hover:underline text-sm">
+                                    View Profile <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">
+                    © 2024 Yufei Chen. All rights reserved.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    Built with modern web technologies for optimal performance and accessibility.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            html.classList.toggle('dark', savedTheme === 'dark');
+        } else {
+            html.classList.toggle('dark', systemPrefersDark);
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile menu toggle (if needed in future)
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuToggle && mobileMenu) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('section > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // System theme change listener
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                html.classList.toggle('dark', e.matches);
+            }
+        });
+    </script>
+</body>
+</html>
