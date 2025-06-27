@@ -50,19 +50,8 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 flex items-center justify-center">
-                        <svg viewBox="0 0 100 100" class="w-8 h-8">
-                            <!-- 南京大学校徽简化版 -->
-                            <circle cx="50" cy="50" r="48" fill="#4A5568" stroke="#2D3748" stroke-width="2"/>
-                            <circle cx="50" cy="50" r="40" fill="#E2E8F0" stroke="#4A5568" stroke-width="1"/>
-                            <!-- 中心的"南大"字样简化表示 -->
-                            <rect x="35" y="35" width="8" height="30" fill="#4A5568"/>
-                            <rect x="35" y="35" width="20" height="6" fill="#4A5568"/>
-                            <rect x="35" y="50" width="15" height="4" fill="#4A5568"/>
-                            <rect x="57" y="35" width="8" height="30" fill="#4A5568"/>
-                            <rect x="57" y="45" width="15" height="4" fill="#4A5568"/>
-                            <rect x="67" y="35" width="5" height="20" fill="#4A5568"/>
-                        </svg>
+                    <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white text-xs font-bold">NJU</span>
                     </div>
                     <span class="font-semibold text-lg">Yufei Chen</span>
                 </div>
@@ -87,8 +76,13 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center text-white">
                 <div class="mb-8">
-                    <div class="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-user-graduate text-4xl"></i>
+                    <div class="relative w-32 h-32 mx-auto mb-6">
+                        <div class="w-full h-full bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center shadow-lg">
+                            <span class="text-white text-3xl font-bold">NJU</span>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white text-sm"></i>
+                        </div>
                     </div>
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">Yufei Chen</h1>
                     <p class="text-xl md:text-2xl font-light mb-6">Master's Candidate in Artificial Intelligence</p>
@@ -128,9 +122,8 @@
                     <p class="text-lg leading-relaxed">
                         My research is dedicated to advancing the <strong>reasoning capabilities of Large Language Models</strong>. 
                         I focus on developing and improving LLMs' ability to perform complex reasoning tasks, including mathematical reasoning, 
-                        logical inference, table-based reasoning, and retrieval-augmented generation. My work explores both 
-                        <strong>In-Context Learning (ICL)</strong> and <strong>Reinforcement Learning (RL)</strong> methodologies 
-                        to enhance the cognitive abilities of AI systems.
+                        logical inference, table-based reasoning, and retrieval-augmented generation. My research explores various methodologies including 
+                        <strong>In-Context Learning (ICL)</strong> and <strong>Reinforcement Learning (RL)</strong> to enhance the reasoning abilities of language models.
                     </p>
                 </div>
             </div>
